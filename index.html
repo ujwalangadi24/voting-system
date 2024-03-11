@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Voting System</title>
+</head>
+<body>
+    <div class="container">
+        <div id="loginPage">
+            <h2>Login as Student</h2>
+            <form id="loginForm" onsubmit="validateLogin(event)">
+                <label for="username">Username:</label>
+                <input type="text" id="username" required>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" required>
+                
+                <button type="submit">Login</button>
+            </form>
+        </div>
+
+        <div id="votingButtons" style="display: none;">
+            <h2>Choose your category:</h2>
+            <button onclick="showCandidates('CR')">CR Candidates</button>
+            <button onclick="showCandidates('BR')">BR Candidates</button>
+        </div>
+
+        <div id="candidatesList" style="display: none;">
+            <h2>Candidates List</h2>
+            <ul id="candidateList"></ul>
+        </div>
+
+        <div id="confirmation" style="display: none;">
+            <h2>Confirmation</h2>
+            <p>Your vote has been cast for <span id="selectedCandidate"></span>.</p>
+        </div>
+    </div>
+
+    <script src="javascript.js"></script>
+</body>
+</html>

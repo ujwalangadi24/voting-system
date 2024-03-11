@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('branchfest_background.jpg'); /* Replace with the actual image URL */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container {
+    text-align: center;
+    padding: 40px;
+    margin: 40px;
+}
+
+button {
+    padding: 15px 25px;
+    font-size: 16px;
+    margin: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #297fb8;
+}
+
+#loginPage {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin: 15px 0;
+}
+
+#username,
+#password {
+    font-size: 18px; /* Increased font size for username and password */
+}
+
+#votingButtons, #candidatesList {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+li {
+    list-style: none;
+    padding: 15px;
+    background-color: #ecf0f1;
+    margin: 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+li:hover {
+    background-color: #d0d3d4;
+}
